@@ -1,0 +1,35 @@
+1. Start with creating an account on GIT (FREE)
+2. Firstly, install git for windows or mac.
+3. Create a local folder "myapp" on your desktop
+4. Right click on the folder-> click git bash here
+5. To make the current folder as your local git repository. Command is below
+                        git init
+6. To create files in the folder. Type command
+                      touch index.html
+7. Open the file in an editor and add some content to it and finally save the file.
+8. In the git bash to check the status of repository command is
+                      git status
+9. In order to add the changed file to the staging. Type command
+                      git add .
+10. To commit the changes to the master local git repository
+                      git commit -m "note of what is being committed"
+11. In order to create a branch of our own, which keeps the branch code separate from the master code
+                      git branch featurename
+12. To switch to the branch
+                      git checkout featurename
+13. Create a file in the branch using command
+                    touch feature1.html
+14. Open the file in the editor and make some changes to it. Then save the file-> add to staging-> commit it to the branch
+15. Change to master by
+                    git checkout master
+16. The file created in step 14 is not available in the folder location, as currently we are in master repo, not the branch repo.
+17. to see the files in the master repo, we need to merge our branches to repository
+                    git merge featurename
+18. you will be able to see the "feature1.html" file in the folder "myapp"
+19. Go to your github account created online in step 1, create a repository -> name it --> make it public --> create
+20. To connect your local repository to the online repository just created, click  on https, copy paste the command to gitbash
+                  git remote add origin "https://github/samplerepo.git"
+21. To push the local repository to remote repository or online repository
+                  git push -u origin master
+
+                  /****vola :) now you can see your  modified files in the remote repo****/
