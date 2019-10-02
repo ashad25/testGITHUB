@@ -1,3 +1,5 @@
+
+UPDATE THIS SHEET TO WHAT IS CREATED
 1. Start with creating an account on GIT (FREE)
 2. Firstly, install git for windows or mac.
 3. Create a local folder "myapp" on your desktop
